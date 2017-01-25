@@ -1,0 +1,36 @@
+//forms, buttons, dialogs etc.
+
+// menu header and portfolio
+.horizontal-menu {
+	&:extend(.ul-unstyled);
+	
+
+	li {
+		display: inline-block;
+		margin-left:15px;
+
+		a {
+			transition: 3s;
+			display: block;
+			border:2px solid transparent;
+			color: #fff;
+			font-weight: 600;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 10px 17px;
+			line-height: 1;
+
+			&.active{
+				border-color:@accent;
+				color:@accent;
+			}
+			&:hover{
+				color:@accent;
+			}
+		}
+	} //li
+
+	&.black-font a {
+	color:@overlay;
+	}
+}

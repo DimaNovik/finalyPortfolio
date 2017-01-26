@@ -6,7 +6,7 @@
   	function blueasyTabs() {
   		var $wrapper = $('.tab-wrapper'),
   			$menu = $wrapper.find('.tab-menu li'),
-  			$content = $wrapper.find('thumbs-row');
+  			$content = $wrapper.find('.thumbs-row');
 
   		$content.not(':first-of-type').hide();
   		$content.each(function(i) {
@@ -29,7 +29,21 @@
 
   	}
   	blueasyTabs();
-  	console.log('hello');
+  	
+
+  	var x= {
+  		a:1,
+  		b:2,
+  		c:0,
+  		increment: function() {
+  			this.c+= this.a + this.b;
+  		}
+  	};
+
+  	var increment = x.increment;
+  	increment();
+  	console.log(x.c);
+
 
 
 

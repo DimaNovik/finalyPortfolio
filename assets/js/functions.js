@@ -30,20 +30,43 @@
   	}
   	blueasyTabs();
   	
+  	function blueasyMenu() {
+  		var $trigger = $('.trigger-nav'),
+  			$menu = $('.trigger-victim');
 
-  	var x= {
-  		a:1,
-  		b:2,
-  		c:0,
-  		increment: function() {
-  			this.c+= this.a + this.b;
-  		}
-  	};
+  		$trigger.click(function(){
+  			$(this).next($menu).slideToggle();
+  		});
 
-  	var increment = x.increment;
-  	increment();
-  	console.log(x.c);
+  		$(window).resize(function(){
+  			if( $(window).width() > 992) {
+  				$menu.removeAttr('style');
+  			}
+  		});
+  	}
 
+
+
+  	blueasyMenuPort();
+
+  		function blueasyMenuPort() {
+  		var $trigger = $('.trigger-port'),
+  			$menu = $('.trigger-victim-port');
+
+  		$trigger.click(function(){
+  			$(this).next($menu).slideToggle();
+  		});
+
+  		$(window).resize(function(){
+  			if( $(window).width() > 992) {
+  				$menu.removeAttr('style');
+  			}
+  		});
+  	}
+
+  	
+
+  	blueasyMenu();
 
 
 

@@ -35,6 +35,120 @@
 	}
 }
 
+//RESPON MENU HEADEAR
+
+.main-nav-trigger {
+	display: none;
+	font-size:40px;
+	color: #fff;
+	float: right;
+	line-height: 1;
+	cursor: pointer;
+	transition: color .3s ease-in-out;
+	&:hover{
+		color:@accent;
+
+	};
+}
+
+@media (max-width: 992px) {
+	.main-nav-trigger {
+		display: block;
+	}
+	.main-logo {
+		float: left;
+	}
+
+	.site-nav {
+		position: relative;
+	}
+
+	.site-nav .horizontal-menu {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left:0;
+		width: 100%;
+		background-color: @overlay;
+		
+
+		li{
+			width: 100%;
+			display: block;
+			margin-left: 0;
+			text-align: center;
+			border-bottom: 1px solid @accent;
+		}
+
+		a {
+			display: inline-block;
+			padding: 10px;
+
+			&.active {
+				border-color: transparent;
+			}
+		}
+	}
+} 
+
+// RESPOND MENU PORTFOLIO
+
+.main-nav-port {
+	display: none;
+	font-size:40px;
+	color: #000;
+	float: right;
+	line-height: 1;
+	cursor: pointer;
+	transition: color .3s ease-in-out;
+	&:hover{
+		color:@accent;
+
+	};
+}
+
+@media (max-width: 992px) {
+	.main-nav-port {
+		display: block;
+
+	}
+
+	.site-nav-port {
+		position: relative;
+	}
+
+	.site-nav-port .horizontal-menu {
+		display: none;
+	
+		top: 200%;
+		left:0;
+		width: 100%;
+		background-color: @overlay;
+		
+
+		li{
+			width: 100%;
+			display: block;
+			margin-left: 0;
+			text-align: center;
+			border-bottom: 1px solid @accent;
+			color:#fff;
+		}
+
+		a {
+			display: inline-block;
+			padding: 10px;
+			color:#fff;
+
+			&.active {
+				border-color: transparent;
+			}
+		}
+	}
+} 
+
+
+
 //FORM-CONTROL
 
 .frm-group {
